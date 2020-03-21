@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>SALAO</title>
+
+    <link rel='stylesheet' type="text/css" href="style.css">
+
+<body>
+    <div name="dados_pessoais">
+        <p> Dados Pessoais</p>
+        <form id="formulario">
+            <p>Nome Completo:
+                <input type="text" id="nome" placeholder="Nome Completo" /><br /></p>
+            <p>Endereço Completo
+                <input type="text" id="Endereco" placeholder="Endereço" maxlength="14" /><br /></p>
+            <p>Telefone Fixo
+                <input type="text" id="telefone" placeholder="(xx) xxxx-xxxx" maxlength="11" /><br /></p>
+            <p> Celular
+                <input type="text" id="celular" placeholder="(xx)xxxxx-xxxx" /><br /></p>
+        </form>
+    </div>
+
+    <div name="referencias">
+        <p>Referências</p>
+        <form id="referencias">
+            <p>Nome Completo:
+                <input type="text" id="nome" placeholder="Nome Completo" /><br /></p>
+            <p>Telefone
+                <input type="text" id="telefone" placeholder="(xx) xxxx-xxxx" maxlength="11" /><br /></p>
+
+        </form>
+    </div>
+
+    <div name="serviços">
+        <p> Serviços</p>
+        <input type="radio" name="q9" id="v9" value="v" />Maquiagem</p>
+        <input type="radio" name="q9" id="v9" value="v" />Manicure</p>
+        <input type="radio" name="q9" id="v9" value="v" />Pedicure</p>
+        <input type="radio" name="q9" id="v9" value="v" />Massagem</p>
+        <input type="radio" name="q9" id="v9" value="v" />Penteado</p>
+        <input type="radio" name="q9" id="v9" value="v" />Corte de cabelo</p>
+        <p><input name="iButton" id="botao" value="enviar" type="button" /></p>
+        <input name="iButton" id="iButton" value="Enviar" type="button" onclick="informacoesDoCadastro()" />
+    </div>
+
+
+    <script>
+        function retornarInformacoesDoCadastro() {
+            var nome = document.getElementById("nome");
+            var endereco = document.getElementById("Endereco");
+            var telefone = document.getElementById("telefone");
+            var celular = document.getElementById("celular");
+
+            return ("novo cadastro" + nome.value + endereco.value + telefone.value + celular.value);
+        }
+        function informacoesDoCadastro() {
+            console.log(retornarInformacoesDoCadastro());
+            alert(retornarInformacoesDoCadastro());
+    </script>
+</body>
+</head>
+
+</html>
