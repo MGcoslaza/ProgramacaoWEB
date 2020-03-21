@@ -1,28 +1,38 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SALAO</title>
 
     <link rel='stylesheet' type="text/css" href="style.css">
 
 <body>
-    <div name="dados_pessoais">
-        <p> Dados Pessoais</p>
-        <form id="formulario">
-            <p>Nome Completo:
-                <input type="text" id="nome" placeholder="Nome Completo" /><br /></p>
-            <p>Endereço Completo
-                <input type="text" id="Endereco" placeholder="Endereço" maxlength="14" /><br /></p>
-            <p>Telefone Fixo
-                <input type="text" id="telefone" placeholder="(xx) xxxx-xxxx" maxlength="11" /><br /></p>
-            <p> Celular
-                <input type="text" id="celular" placeholder="(xx)xxxxx-xxxx" /><br /></p>
-        </form>
+    <header>
+        <main>
+            
+            <div name="dados_pessoais">
+                <h1>  <input type="image" src="https://image.flaticon.com/icons/svg/60/60775.svg" alt="Submit" width="110" height="40">
+                CADASTRO</h1>
+    </header>
+
+    <form id="formulario">
+        <P> Dados Pessoais</P>
+        <p>Nome Completo:
+            <input type="text" id="nome" placeholder="Nome Completo" /><br /></p>
+        <p>Endereço Completo
+            <input type="text" id="Endereco" placeholder="Endereço" maxlength="14" /><br /></p>
+        <p>Telefone Fixo
+            <input type="text" id="telefone" placeholder="(xx) xxxx-xxxx" maxlength="11" /><br /></p>
+        <p> Celular
+            <input type="text" id="celular" placeholder="(xx)xxxxx-xxxx" /><br /></p>
+    </form>
     </div>
 
-    <div name="referencias">
+    <br></br>
+    <div id="referencias">
         <p>Referências</p>
-        <form id="referencias">
+        <form id="referencia">
             <p>Nome Completo:
                 <input type="text" id="nome" placeholder="Nome Completo" /><br /></p>
             <p>Telefone
@@ -30,8 +40,8 @@
 
         </form>
     </div>
-
-    <div name="serviços">
+    <br></br>
+    <div id="servicos">
         <p> Serviços</p>
         <input type="radio" name="q9" id="v9" value="v" />Maquiagem</p>
         <input type="radio" name="q9" id="v9" value="v" />Manicure</p>
@@ -39,10 +49,15 @@
         <input type="radio" name="q9" id="v9" value="v" />Massagem</p>
         <input type="radio" name="q9" id="v9" value="v" />Penteado</p>
         <input type="radio" name="q9" id="v9" value="v" />Corte de cabelo</p>
-        <p><input name="iButton" id="botao" value="enviar" type="button" /></p>
-        <input name="iButton" id="iButton" value="Enviar" type="button" onclick="informacoesDoCadastro()" />
+
+    </div>
+    <div id="botoes">
+        <p><input name="iButton" id="salva" value="Salvar" type="button" />
+            <input name="iButton" id="cancela" value="Cancelar" type="button" onclick="informacoesDoCadastro()" /></p>
     </div>
 
+
+    </main>
 
     <script>
         function retornarInformacoesDoCadastro() {

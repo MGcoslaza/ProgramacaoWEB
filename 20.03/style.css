@@ -1,5 +1,57 @@
-.dados_pessoais{
-    box-shadow: 10px 10px 10px black;
-    font-family: Arial;
-    background-color: #FF4081;
+body{
+    background-color: #F2D0E3;
+    border-color: black;
+    border-width: 1;
+    text-align: center;
+    font-family: candara;
+
+}
+header{
+    background-color: #A8518A;
+    padding-top: 10;
+    padding-bottom: 5;
+    font-size: 22px;
+    font-family: candara;
+}
+h1{
+    color: white;
+    padding-top: 10;
+}
+
+#formulario{
+    border: 1px solid black; 
+}
+
+#referencias{
+    border: 1px solid black; 
+}
+
+#servicos{
+    border: 1px solid black; 
+}
+
+#salva{
+    background-color: #A8518A;
+    color: white;
+}
+#cancela{
+    background-color: #A8518A;
+    color: white;
+}
+
+#salva:hover{
+    color: #A8518A;
+    background-color: white;
+}
+
+#cancela:hover{
+    color: #A8518A;
+    background-color: white;
+}
+
+#volta{
+    background-image: url(https://cdn2.iconfinder.com/data/icons/general-ui-outlined/16/left-512.png);
+}
+#servico{
+    border: 1px solid black; 
 }
