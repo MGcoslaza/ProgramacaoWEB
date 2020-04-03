@@ -25,78 +25,78 @@
         <tbody>
             <tr>
                 <td class="digito">9</td>
-                <td><button type="button" id="button1">Calcula</button></td>
+                <td><button type="button" id="button" onclick="calcular(9)">Calcula</button></td>
                 <td>?</td>
             </tr>
             <tr>
                 <td class="digito">526</td>
-                <td><button type="button" id="button2">Calcula</button></td>
+                <td><button type="button" id="button" onclick="calcular(526)">Calcula</button></td>
                 <td>?</td>
             </tr>
             <tr>
                 <td class="digito">20</td>
-                <td><button type="button" id="button3">Calcula</button></td>
+                <td><button type="button" id="button" onclick="calcular(20)">Calcula</button></td>
                 <td>?</td>
             </tr>
             <tr>
 
                 <td class="digito">15</td>
-                <td><button type="button" id="button4">Calcula</button></td>
+                <td><button type="button" id="button" onclick="calcular(15)">Calcula</button></td>
                 <td>?</td>
             </tr>
             <tr>
                 <td class="digito">32</td>
-                <td><button type="button" id="button5">Calcula</button></td>
+                <td><button type="button" id="button" onclick="calcular(32)">Calcula</button></td>
                 <td>?</td>
             </tr>
             <tr>
                 <td class="digito">2031654946</td>
-                <td><button type="button" id="button6">Calcula</button></td>
+                <td><button type="button" id="button6" onclick="calcular(2031654946)">Calcula</button></td>
                 <td>?</td>
             </tr>
             <tr>
                 <td class="digito">19</td>
-                <td><button type="button" id="button7">Calcula</button></td>
+                <td><button type="button" id="button" onclick="calcular(19)">Calcula</button></td>
                 <td>?</td>
             </tr>
             <tr>
                 <td class="digito">42</td>
-                <td><button type="button" id="button8">Calcula</button></td>
+                <td><button type="button" id="button" onclick="calcular(42)">Calcula</button></td>
                 <td>?</td>
             </tr>
         </tbody>
     </table>
     <script>
         document.getElementById("button1").addEventListener("click", calcular);
-        function calcular() {
-            var numero = 9;
+        function calcular(x) {
+            var numero = x;
             console.log(numero);
-            var maiorGap = 0;
-            var gap = 0;
-            var binario = numero.toString(2);
-            var index = binario.lenght - 1;
-
-            for (index; index >= 0; index--) {
-                if (binario.charAt(index) != '0') {
-                    break;
-                }
-            }
-
-            for (var i = index - 1; i >= 0; i--) {
-                if (binario.charAt(i) == '0') {
-                    gap = gap + 1;
-                } else {
-                    if (gap > maiorGap) {
-                        maiorGap = gap;
-                    }
-                    gap = 0;
-                }
-            }
-
-            alert(maiorGap);
+            /* var maiorGap = 0;
+             var gap = 0;
+             var binario = numero.toString(2);
+             var index = binario.lenght - 1;
+ 
+             for (index; index >= 0; index--) {
+                 if (binario.charAt(index) != '0') {
+                     break;
+                 }
+             }
+ 
+             for (var i = index - 1; i >= 0; i--) {
+                 if (binario.charAt(i) == '0') {
+                     gap = gap + 1;
+                 } else {
+                     if (gap > maiorGap) {
+                         maiorGap = gap;
+                     }
+                     gap = 0;
+                 }
+             }
+ 
+             alert(maiorGap);
+         }
+ */
         }
-
-}
 
     </script>
 </body>
