@@ -8,7 +8,7 @@
     top: 6px;
     }
 #fundo{
-    background-image: url(fundo.png);
+    background-image: url(img/fundo.png);
     background-size: cover;
     width: absolute;
     height: 900px;
